@@ -11,6 +11,10 @@
       content="Who am I? What is my purpose on this planet? "
     />
     <meta name="author" content="Baran Kurtulus Ozan" />
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <!--link rel="icon" href="/icon.svg" type="image/svg+xml"-->
+    <!--link rel="apple-touch-icon" href="/apple-touch-icon.png" -->
+    <!--link rel="manifest" href="/manifest.webmanifest"-->
     <link rel="stylesheet" href="css/style.css" />
     <title>Baran Kurtulus Ozan - Frontend Developer</title>
   </head>
@@ -33,6 +37,7 @@
             aria-selected="true"
             aria-controls="me-tab"
             id="me"
+            tabindex="-1"
           >
             me
           </button>
@@ -55,11 +60,23 @@
           >
             other
           </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="other-otter-tab"
+            id="other-otter"
+            tabindex="-1"
+            data-deletable=""
+          >
+            other
+          </button>
+        </div>
         </div>
         <div tabindex="0" role="tabpanel" id="me-tab" aria-labelledby="me">
-          <p>me</p>
+          <h2>Hi, I'm Baran, FD by day, FSD by night.</h2>
+          <p>Computer Engineer, geek by nature</p>
+          <p>Izmir</p>
         </div>
-
         <div
           tabindex="0"
           role="tabpanel"
@@ -67,7 +84,45 @@
           aria-labelledby="job"
           hidden=""
         >
-          <p>job</p>
+        <h3>what do I do to make a living</h3>
+          <ul>
+            <li>e-commerce frontend developer</li>
+            <li>
+              worked for sfcc / cloud craze / visualforce salesforce departments
+            </li>
+            <li>wrote b2b frontend manual for osf</li>
+            <li>had several mentees trained</li>
+            <li>calculated man/hour for 4 projects at requirement meetings</li>
+            <li>delivered 6 projects, initialized 10 projects</li>
+            <li>
+              worked in teams of 4 to 60 multi-national devs on various projects
+            </li>
+            <li>participated in design and mock-up meetings</li>
+            <li>did code reviews for two years</li>
+            <li>managed frontend deployments for 4 projects</li>
+            <li>
+              volunteered for test driven project approach and cost calculation
+            </li>
+            <li>
+              implemented Vue.js internal projects and participated Hackathons
+            </li>
+            <li>React.js as hobby</li>
+            <li>
+              small design agency partner, </li>
+            <li>develops websites/e-commerce
+              stores for various clients
+            </li>
+          </ul>
+          <hr>
+          <h3>tech stack</h3>
+          <ul>
+            <li class="tech-stack">Javascript ES6 Backbone jQuery Vue React</li>
+            <li class="tech-stack">SASS (BEM) Webpack Gulp Grunt</li>
+            <li class="tech-stack">NodeJS Express NextJS Docker </li>
+            <li class="tech-stack">Bootstrap Foundation Figma</li>
+            <li class="tech-stack">Mocha Chai Scrum</li>
+            <li class="tech-stack">Git Bitbucket Jira Confluence</li>
+          </ul>
         </div>
         <div
           tabindex="0"
@@ -76,7 +131,46 @@
           aria-labelledby="other"
           hidden=""
         >
-          <p>otter</p>
+          <h4>hobbies since 2018 <span class="hobby-quote">it has been more than a year and a half</span></h4>
+          <p>was quite into acting in plays</p>
+          <ul id="hobbies" class="hobbies">
+            <li class="hobby">
+              <p class="acting">The Insector - Nikolai Gogol </p>
+              <p class="acting">Woyzeck - Georg Büchner </p>
+              <p class="acting">Antigone - Slavoj Zizek</p>
+              <p class="acting"> Masked Men - Ilan Hatsor</p>
+              <p>and dancing <span class="dance">Lindy Hop</span> before covid, what a flu.</p>
+              <p>now I like travelling and hiking a lot</p>
+            </li>
+          </ul>
+          <hr>
+          <h4>hobbies until 2018 <span class="hobby-quote">probably forgot most of them</span></h4>
+          <ul id="hobbies" class="hobbies">
+            <li class="hobby">
+              <p>Data Science and Deep Learning</p>
+              <p>Akademik Bilişim Congress 2016</p>
+              <p>ANN, Backpropagation, Cost Function MLP, CNN </p>
+              <p>RNN, LSTM, DBN, Dimensional reduction Theano, Caffe</p>
+              <p>Tensorflow, MNIST, CIFAR10, jupyter RStudio, knitr, sweave, org-mode</p></li>
+            <li class="hobby">
+              <p>Big Data and Data Visualization</p>
+              <p>Akademik Bilişim Congress 2015</p>
+              <p>DataFlow, BigQuery, Sparse Matrix Applications with R, Tableau</p>
+              <p>H20 ,NodeXL, Artificial Neural Networks, Introduction to Machine Learning</p>
+              </li>
+            <li class="hobby">
+              <p>Introduction to DevOps [Linux] - Linux users association 2017</p>
+            </li>
+          </ul>
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="other-otter-tab"
+          aria-labelledby="other-otter"
+          hidden=""
+        >
+          <p>other otter</p>
         </div>
       </div>
     </main>
