@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+}
+body {
+  min-height: 100vh;
+  font-size: medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  padding-top: 3em;
+}
+
+section {
+  width: 40vh;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+ul {
+  padding-inline-start: 0;
+}
+.invisible {
+  visibility: hidden;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  background: #ffffff;
+}
+.menu-item {
+  padding: 2em;
+}
+.portrait {
+  --splatted: "M232.5 256C225 251 209.5 262.5 224 281.5C232.736 292.948 238.561 297.756 251 290.5C257 287 256.114 271.924 250 264.5C243.886 257.076 240 261 232.5 256ZM147 92.5C118.738 94.6708 118 17 93 44C68 71 123.543 76.5 108 101.5C90.5 115 70.81 98.3664 64 115C56.7766 132.643 91.1967 136.948 90.5 156C89.4406 184.974 19.1766 161.499 24.5 190C29.9178 219.006 78.6461 172.635 100 193C130.207 221.808 1 248.5 58.5 291.5C94.5576 318.465 114.991 206.551 140.5 211C183.5 218.5 134.5 294 186.5 279.5C207.5 273 174.638 224.658 196 204C223.117 177.777 275.916 253 291.5 218.5C311.375 174.5 228.698 194.565 224 160C219.553 127.282 291.5 123.5 267.5 87.5C238.5 57 247 125.5 196 105.5C147 92.5 229.5 13.5 173.5 2.5C140.5 2.49999 183.532 89.694 147 92.5ZM45 92.5C36.8766 80.3149 14.1234 75.3149 6.00001 87.5C0.584412 95.6234 2.00001 120.357 14.5 115C27.9606 109.231 36.8766 124.685 45 112.5C50.4156 104.377 50.4156 100.623 45 92.5Z";
+  --splattier: "M161 188.375C170 193.5 177.919 193.854 186 188.375C197.919 180.294 197.919 159.581 186 151.5C177.919 146.021 169.081 146.021 161 151.5C149.081 159.581 152 183.25 161 188.375ZM145.5 70.5C127 70.5 112 24.5202 89.5 42C77.6254 51.2251 94.3244 85.6756 87.5 92.5C81.0365 98.9635 61.5 85.5 53.5 112C45.5 138.5 74.5 143.25 74.5 154C74.5 164.751 36.6441 162.082 39.5 185.5C42 206 86.5365 194.537 93 201C100.5 213.5 52 251.495 80 263.5C103 273.362 118 222.5 141 222.5C151.261 222.5 156.5 271.5 182.5 268C202.988 265.242 192.5 222.5 205.5 213.5C218.5 204.5 267.5 235 279.5 213.5C292.936 189.427 235.5 171 235.5 154C232.5 135.5 282.5 113.5 267.5 87.5C254.5 70.5 218 96 201.5 92.5C186 84 196 42 175.5 38C157.5 31.5 155.991 70.5 145.5 70.5ZM138 129C129.877 116.815 108.623 116.815 100.5 129C95.0844 137.123 95.0844 145.877 100.5 154C108.623 166.185 129.877 166.185 138 154C143.416 145.877 143.416 137.123 138 129Z";
+  --splat: "M161 188.375C170 193.5 177.919 193.854 186 188.375C197.919 180.294 197.919 159.581 186 151.5C177.919 146.021 169.081 146.021 161 151.5C149.081 159.581 152 183.25 161 188.375ZM141.5 59.5C131.26 59.5 117.936 45.0628 100.5 52C81.6499 59.5 86.0351 73.5325 78.5 85.5C70 99 57.9171 96.3659 49.5 115C40.4659 135 58.5 138 58.5 154C58.5 170 41 166.5 46.5 185.5C52 204.5 72.5 196 81.6499 209C94.5 218.5 81.6499 233.418 100.5 241.5C122.657 251 121.5 232 141.5 237C154.5 237 154.5 257 180.5 251C203.99 245.579 193.5 230 211 222.5C226.5 212.5 236.5 226 255 206C272.51 187.07 247.5 177 249 154C253 132.5 273.5 120 258.5 94C245.5 77 235 78.5 211 75.5C190.5 68 200 53 177.5 49.5C153.5 43.5 161 59.5 141.5 59.5ZM138 129C129.877 116.815 108.623 116.815 100.5 129C95.0844 137.123 95.0844 145.877 100.5 154C108.623 166.185 129.877 166.185 138 154C143.416 145.877 143.416 137.123 138 129Z";
+  height: 300px;
+  width: 300px;
+  background-image: url("assets/img/code-icon-bg.svg");
+  background-position: calc(var(--x, 0) * 1px) calc(var(--y, 0) * 1px);
+  background-color: #f08a75;
+  -webkit-clip-path: path(var(--clip, var(--splat)));
+  clip-path: path(var(--clip, var(--splat)));
+  transition: transform 0.2s, -webkit-clip-path 0.2s;
+  transition: clip-path 0.2s, transform 0.2s;
+  transition: clip-path 0.2s, transform 0.2s, -webkit-clip-path 0.2s;
+  transform: scale(var(--scale, 1)) rotate(var(--rotate, 0deg));
+  position: relative;
+  cursor: pointer;
+}
+.portrait:hover {
+  --clip: var(--splattier);
+  --scale: 1.15;
+  --rotate: 15deg;
+}
+.portrait:active {
+  --clip: var(--splatted);
+  --scale: 0.85;
+  --rotate: -10deg;
+}
+.portrait__img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.portrait__img:nth-of-type(1) {
+  display: block;
+}
+.portrait:hover .portrait__img:nth-of-type(1),
+.portrait:hover .portrait__img:nth-of-type(3) {
+  display: none;
+}
+.portrait:hover .portrait__img:nth-of-type(2) {
+  display: block;
+}
+.portrait:active .portrait__img:nth-of-type(1),
+.portrait:active .portrait__img:nth-of-type(2) {
+  display: none;
+}
+.portrait:active .portrait__img:nth-of-type(3) {
+  display: block;
+}
+/* tabs */
+[role="tablist"] {
+  margin: 0 0 -0.1em;
+  overflow: visible;
+}
+
+[role="tab"] {
+  position: relative;
+  margin: 0;
+  padding: 0.3em 0.5em 0.4em;
+  border: 1px solid hsl(219, 1%, 72%);
+  border-radius: 0.2em 0.2em 0 0;
+  box-shadow: 0 0 0.2em hsl(219, 1%, 72%);
+  overflow: visible;
+  font-family: inherit;
+  font-size: inherit;
+  background: hsl(220, 20%, 94%);
+}
+
+[role="tab"]:hover::before,
+[role="tab"]:focus::before,
+[role="tab"][aria-selected="true"]::before {
+  position: absolute;
+  bottom: 100%;
+  right: -1px;
+  left: -1px;
+  border-radius: 0.2em 0.2em 0 0;
+  border-top: 3px solid hsl(20, 96%, 48%);
+  content: "";
+}
+
+[role="tab"][aria-selected="true"] {
+  border-radius: 0;
+  background: hsl(220, 43%, 99%);
+  outline: 0;
+}
+
+[role="tab"][aria-selected="true"]:not(:focus):not(:hover)::before {
+  border-top: 5px solid hsl(218, 96%, 48%);
+}
+
+[role="tab"][aria-selected="true"]::after {
+  position: absolute;
+  z-index: 3;
+  bottom: -1px;
+  right: 0;
+  left: 0;
+  height: 0.3em;
+  background: hsl(220, 43%, 99%);
+  box-shadow: none;
+  content: "";
+}
+
+[role="tab"]:hover,
+[role="tab"]:focus,
+[role="tab"]:active {
+  outline: 0;
+  border-radius: 0;
+  color: inherit;
+}
+
+[role="tab"]:hover::before,
+[role="tab"]:focus::before {
+  border-color: hsl(20, 96%, 48%);
+}
+
+[role="tabpanel"] {
+  position: relative;
+  z-index: 2;
+  padding: 0.5em 0.5em 0.7em;
+  border: 1px solid hsl(219, 1%, 72%);
+  border-radius: 0 0.2em 0.2em 0.2em;
+  box-shadow: 0 0 0.2em hsl(219, 1%, 72%);
+  background: hsl(220, 43%, 99%);
+}
+
+[role="tabpanel"]:focus {
+  border-color: hsl(20, 96%, 48%);
+  box-shadow: 0 0 0.2em hsl(20, 96%, 48%);
+  outline: 0;
+}
+
+[role="tabpanel"]:focus::after {
+  position: absolute;
+  bottom: 0;
+  right: -1px;
+  left: -1px;
+  border-bottom: 3px solid hsl(20, 96%, 48%);
+  border-radius: 0 0 0.2em 0.2em;
+  content: "";
+}
+
+[role="tabpanel"] p {
+  margin: 0;
+}
+
+[role="tabpanel"] * + p {
+  margin-top: 1em;
+}

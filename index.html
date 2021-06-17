@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--what type of document are you looking at-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!---->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Who am I? What is my purpose on this planet? "
+    />
+    <meta name="author" content="Baran Kurtulus Ozan" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Baran Kurtulus Ozan - Frontend Developer</title>
+  </head>
+  <body>
+    <header>
+      <!--
+      <nav>
+        <ul class="menu">
+          <li class="menu-item"><a href="#me">me</a></li>
+          <li class="menu-item"><a href="#job">job</a></li>
+          <li class="menu-item"><a href="#other">other</a></li>
+        </ul>
+      </nav>-->
+    </header>
+    <main>
+      <div class="tabs">
+        <div role="tablist" aria-label="info">
+          <button
+            role="tab"
+            aria-selected="true"
+            aria-controls="me-tab"
+            id="me"
+          >
+            me
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="job-tab"
+            id="job"
+            tabindex="-1"
+          >
+            job
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="other-tab"
+            id="other"
+            tabindex="-1"
+            data-deletable=""
+          >
+            other
+          </button>
+        </div>
+        <div tabindex="0" role="tabpanel" id="me-tab" aria-labelledby="me">
+          <p>me</p>
+        </div>
+
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="job-tab"
+          aria-labelledby="job"
+          hidden=""
+        >
+          <p>job</p>
+        </div>
+        <div
+          tabindex="0"
+          role="tabpanel"
+          id="other-tab"
+          aria-labelledby="other"
+          hidden=""
+        >
+          <p>otter</p>
+        </div>
+      </div>
+    </main>
+    <aside class="invisible">
+      <div class="portrait">
+        <img
+          class="portrait__img"
+          src="assets/img/cat--unnoticed.png"
+          alt="Cat is sleeping"
+        /><img
+          class="portrait__img"
+          src="assets/img/cat--noticed.png"
+          alt="Cat noticed you"
+        /><img
+          class="portrait__img"
+          src="assets/img/cat--staring.png"
+          alt="Cat staring at you"
+        />
+      </div>
+    </aside>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
