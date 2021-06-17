@@ -11,8 +11,8 @@ body {
   flex-wrap: wrap;
   overflow-x: hidden;
   padding-top: 3em;
+  background-color: #000;
 }
-
 section {
   width: 40vh;
   position: absolute;
@@ -174,12 +174,12 @@ ul {
   border: 1px solid hsl(219, 1%, 72%);
   border-radius: 0 0.2em 0.2em 0.2em;
   box-shadow: 0 0 0.2em hsl(219, 1%, 72%);
-  background: hsl(220, 43%, 99%);
+  background: hsl(201, 59%, 93%);
 }
 
 [role="tabpanel"]:focus {
-  border-color: hsl(20, 96%, 48%);
-  box-shadow: 0 0 0.2em hsl(20, 96%, 48%);
+  border-color: hsl(189, 70%, 67%);
+  box-shadow: 0 0 0.2em hsl(209, 94%, 31%);
   outline: 0;
 }
 
