@@ -110,7 +110,7 @@ ul {
 [role="tab"] {
   position: relative;
   margin: 0;
-  padding: 0.3em 0.5em 0.4em;
+  padding: 0.5em 2em;
   border: 1px solid hsl(219, 1%, 72%);
   border-radius: 0.2em 0.2em 0 0;
   box-shadow: 0 0 0.2em hsl(219, 1%, 72%);
