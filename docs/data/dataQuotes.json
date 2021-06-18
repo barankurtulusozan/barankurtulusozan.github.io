@@ -1,0 +1,103 @@
+{
+  "dataQuotes": {
+    "quotes": [
+      {
+        "from": "web.stanford.edu - cs142",
+        "quote": "Closures simply capture all the references of a function so they are available after the function exits.Since a function can access something of any type a closure can hold a variable of any type.",
+        "tags": [
+          "Closure"
+        ]
+      },
+      {
+        "from": "web.stanford.edu - cs142",
+        "quote": "bind() returns a copy of the passed in function with its 'this' assigned to whatever was passed in as an argument to bind(), but does not actually execute the function. call() immediately executes the provided function with 'this' set from the arguments and returns whatever the function normally returns",
+        "tags": [
+          "this",
+          "bind",
+          "call"
+        ]
+      },
+      {
+        "from": "web.stanford.edu - cs142",
+        "quote": "hostname = hostname || \"localhost\";\r\nCan assign a default value to hostname \r\nhostname would assign to \"localhost\" if hostname is defined, or remain undefined otherwise",
+        "tags": [
+          "hostname"
+        ]
+      },
+      {
+        "from": "web.stanford.edu - cs142",
+        "quote": "var prop = obj && obj.propname;\r\nCan assign object property if object is defined\r\nvar prop will be assigned to either obj or raise an exception",
+        "tags": [
+          "prop",
+          "object definition"
+        ]
+      },
+      {
+        "from": "web.stanford.edu - cs142",
+        "quote": "The JavaScript runtime environment runs all code as functions that must return before some other function runs. This run to completion approach means any individual JavaScript statement's execution can not be interleaved with any other execution making the race conditions of multithreaded environments like Java and C++ not an issue. There is only a single thread of control running JavaScript code.",
+        "tags": [
+          "JS Runtime",
+          "JS execution"
+        ]
+      },
+      {
+        "from": "web.stanford.edu - cs142",
+        "quote": "In GraphQL, the user can specify exactly which properties they want from the large number of properties. With a REST system, even if the user only wanted 1 property, they would have to fetch the entire resource, which would result in a lot of unneeded data being transferred.",
+        "tags": [
+          "GraphQL",
+          "REST"
+        ]
+      },
+      {
+        "from": "web.stanford.edu - cs142",
+        "quote": "Content distribution network (CDN) works by replicating content widely in geographically diverse areas. Updating content requires updating all the replicas in geographically diverse areas, a significant task that would be time and resource intensive to do frequently",
+        "tags": [
+          "CDN"
+        ]
+      },
+      {
+        "from": "web.stanford.edu - cs142",
+        "quote": "Scale-out architectures scale by adding or subtracting instances of the service. Failures of instances naturally map to subtraction of instances and can be handled in this way.  Scale-up architectures, on the other hand, put all resources into one big machine making failure containment a difficult problem.",
+        "tags": [
+          "architecture",
+          "scale-up",
+          "scale-out"
+        ]
+      },
+      {
+        "from": "web.stanford.edu - cs142",
+        "quote": "An eavesdropper attack involves an attacker passively spying on network traffic between the frontend and backend of a web application. Encryption/decryption prevents this kind of spying on network traffic.",
+        "tags": [
+          "security",
+          "eavesdropper"
+        ]
+      },
+      {
+        "from": "web.stanford.edu - cs142",
+        "quote": "Denial of service attack involves using of resources of a web application so legitimate users can get service.   Encryption, MACs, and HTTPS certs do not help with this kind of attack.",
+        "tags": [
+          "dos",
+          "denial of service"
+        ]
+      },
+      {
+        "from": "web.stanford.edu - cs142",
+        "quote": "Phishing attacks involve trying to fool the user with a fake copy of the web application.  HTTPS certificates allow a user to validate the backend they are talking to making a fake copy harder.",
+        "tags": [
+          "Phishing",
+          "security",
+          "HTTPS",
+          "certificate"
+        ]
+      },
+      {
+        "from": "web.stanford.edu - cs142",
+        "quote": "SQL injection attacks involve sending input to a web application backend that gets interpreted as SQL code.  Encryption, MACs, and HTTPS certs do not help with this kind of attack.",
+        "tags": [
+          "SQL injection",
+          "security"
+        ]
+      }
+    ]
+  }
+}
