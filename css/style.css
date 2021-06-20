@@ -2,6 +2,32 @@
   box-sizing: border-box;
   flex: 0 0 auto;
 }
+:root {
+  --gradient: linear-gradient(60deg, #000000, #8476a3, #70bad1, #ececec);
+}
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
 body {
   min-height: 100vh;
   font-size: medium;
@@ -11,7 +37,11 @@ body {
   flex-wrap: wrap;
   overflow-x: hidden;
   padding-top: 3em;
-  background-color: #000;
+  background: #ddd;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 25s infinite;
+  animation: bg-animation 25s infinite;
 }
 section {
   width: 40vh;
@@ -22,6 +52,18 @@ section {
 ul {
   padding-inline-start: 0;
   list-style: none;
+}
+.bg-gradient {
+  background-image: var(--gradient);
+  -webkit-background-clip: text;
+  font-size: xx-large;
+  background-clip: text;
+  background-size: 300%;
+  transition: background-position 1s;
+  font-style: italic;
+  color: #70bee2;
+  line-height: 1.5;
+  color: transparent;
 }
 #hobbies li p {
   margin: 0;
