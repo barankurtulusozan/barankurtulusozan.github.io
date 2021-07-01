@@ -2,182 +2,143 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Baran Kurtulus Ozan" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="#ffffff">
-
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Baran Kurtulus Ozan - Frontend Developer</title>
+    <title>Baran Kurtulus Ozan - Front End Developer</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <div class="tabs">
-        <div role="tablist" aria-label="info">
-          <button
-            role="tab"
-            aria-selected="true"
-            aria-controls="me-tab"
-            id="me"
-            tabindex="-1"
-          >
-            me
-          </button>
-          <button
-            role="tab"
-            aria-selected="false"
-            aria-controls="job-tab"
-            id="job"
-            tabindex="-1"
-          >
-            job
-          </button>
-          <button
-            role="tab"
-            aria-selected="false"
-            aria-controls="other-tab"
-            id="other"
-            tabindex="-1"
-            data-deletable=""
-          >
-            other
-          </button>
-          <button
-            role="tab"
-            aria-selected="false"
-            aria-controls="other-otter-tab"
-            id="other-otter"
-            tabindex="-1"
-            data-deletable=""
-          >
-            other
-          </button>
+    <div class="mouse-halo"></div>
+    <div class="mouse-pointer"></div>
+    <div class="container">
+      <div class="homepage-bg"></div>
+      <section id="splash" class="section-1 center-both">
+        <a href="" class="logo">Baran Kurtulus Ozan</a>
+        <div class="circles">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
+          <div class="circle circle-4"></div>
         </div>
+        <div class="main-circle">
+          <img src="images/landing/designer.jpg" alt="photo of the designer" />
         </div>
-        <div tabindex="0" role="tabpanel" id="me-tab" aria-labelledby="me">
-          <h2 class="bg-gradient">Hi, I'm Baran, FD by day, geek by night.</h2>
+        <h4 class="featured-text featured-text-1">Frontend</h4>
+        <h4 class="featured-text featured-text-2">Developer</h4>
+        <a href="#about-me" class="main-btn">
+          <div class="main-btn-content center-both">
+            <div class="main-btn-line"></div>
+            <div class="main-btn-line"></div>
+            <div class="main-btn-line"></div>
+            <div class="cta-about">About Me</div>
+          </div>
+        </a>
+      </section>
+      <section id="about-me" class="section-2 center-both">
+        <h3 class="section-2-heading">About me</h3>
+        <div class="about-me-heading center-both">
+          <a class="brief" href="#about-me">
+            <h2 class="brief-title center">
+              e-commerce frontend developer since 2016
+            </h2>
+          </a>
         </div>
-        <div
-          tabindex="0"
-          role="tabpanel"
-          id="job-tab"
-          aria-labelledby="job"
-          hidden=""
-        >
-        <h3>what do I do to make a living</h3>
-          <ul>
-            <li>e-commerce frontend developer</li>
-            <li>
-              worked for sfcc / cloud craze / visualforce salesforce departments
-            </li>
-            <li>wrote b2b frontend manual for osf</li>
-            <li>had several mentees trained</li>
-            <li>calculated man/hour for 4 projects at requirement meetings</li>
-            <li>delivered 6 projects, initialized 10 projects</li>
-            <li>
-              worked in teams of 4 to 60 multi-national devs on various projects
-            </li>
-            <li>participated in design and mock-up meetings</li>
-            <li>did code reviews for two years</li>
-            <li>managed frontend deployments for 4 projects</li>
-            <li>
-              volunteered for test driven project approach and cost calculation
-            </li>
-            <li>
-              implemented Vue.js internal projects and participated Hackathons
-            </li>
-            <li>React.js as hobby</li>
-            <li>
-              small design agency partner, </li>
-            <li>develops websites/e-commerce
-              stores for various clients
-            </li>
-          </ul>
-          <hr>
-          <h3>tech stack</h3>
-          <ul>
-            <li class="tech-stack">Javascript ES6 Backbone jQuery Vue React</li>
-            <li class="tech-stack">SASS (BEM) Webpack Gulp Grunt</li>
-            <li class="tech-stack">NodeJS Express NextJS Docker </li>
-            <li class="tech-stack">Bootstrap Foundation Figma</li>
-            <li class="tech-stack">Mocha Chai Scrum</li>
-            <li class="tech-stack">Git Bitbucket Jira Confluence</li>
-          </ul>
+
+        <ul class="about-me-text center">
+          <li>
+            worked for sfcc (demandware) B2C and <br />
+            cloud craze B2B salesforce departments
+          </li>
+          <li>wrote b2b frontend manual for osf</li>
+          <li>delivered 6, initialized 10 projects</li>
+          <li>worked in teams of 4 to 60 multi-national devs</li>
+          <li>design and mock-up meetings</li>
+          <li>calculated man/hour for projects at requirement meetings</li>
+          <li>managed frontend deployments</li>
+          <li>did code reviews and mentees trained</li>
+          <li>volunteered for test driven project approach</li>
+          <li>Vue.js internal projects and Hackathons</li>
+          <li>small design agency partner and uses React.js as hobby</li>
+          <li>develops websites/e-commerce stores for various clients</li>
+        </ul>
+        <a id="projects-btn" href="#projects" class="main-btn">
+          <div class="main-btn-content center-both">
+            <div class="main-btn-line"></div>
+            <div class="main-btn-line"></div>
+            <div class="main-btn-line"></div>
+            <div class="cta-projects">Projects</div>
+          </div>
+        </a>
+      </section>
+      <section id="projects" class="section-3 center">
+        <div class="projects-heading center-both">
+          <a class="brief" href="#projects">
+            <h2 class="brief-title center">Client Projects</h2>
+          </a>
         </div>
-        <div
-          tabindex="0"
-          role="tabpanel"
-          id="other-tab"
-          aria-labelledby="other"
-          hidden=""
-        >
-          <h4>hobbies since 2018 <span class="hobby-quote">it has been more than a year and a half</span></h4>
-          <p>was quite into acting in plays</p>
-          <ul id="hobbies" class="hobbies">
-            <li class="hobby">
-              <p class="acting">The Insector - Nikolai Gogol </p>
-              <p class="acting">Woyzeck - Georg Büchner </p>
-              <p class="acting">Antigone - Slavoj Zizek</p>
-              <p class="acting"> Masked Men - Ilan Hatsor</p>
-              <p>and dancing <span class="dance">Lindy Hop</span> before covid, what a flu.</p>
-              <p>now I like travelling and hiking a lot</p>
-            </li>
-          </ul>
-          <hr>
-          <h4>hobbies until 2018 <span class="hobby-quote">probably forgot most of them</span></h4>
-          <ul id="hobbies" class="hobbies">
-            <li class="hobby">
-              <p>Data Science and Deep Learning</p>
-              <p>Akademik Bilişim Congress 2016</p>
-              <p>ANN, Backpropagation, Cost Function MLP, CNN </p>
-              <p>RNN, LSTM, DBN, Dimensional reduction Theano, Caffe</p>
-              <p>Tensorflow, MNIST, CIFAR10, jupyter RStudio, knitr, sweave, org-mode</p></li>
-            <li class="hobby">
-              <p>Big Data and Data Visualization</p>
-              <p>Akademik Bilişim Congress 2015</p>
-              <p>DataFlow, BigQuery, Sparse Matrix Applications with R, Tableau</p>
-              <p>H20 ,NodeXL, Artificial Neural Networks, Introduction to Machine Learning</p>
-              </li>
-            <li class="hobby">
-              <p>Introduction to DevOps [Linux] - Linux users association 2017</p>
-            </li>
-          </ul>
-        </div>
-        <div
-          tabindex="0"
-          role="tabpanel"
-          id="other-otter-tab"
-          aria-labelledby="other-otter"
-          hidden=""
-        >
-          <p>other otter</p>
-        </div>
-      </div>
-    </main>
-    <aside class="invisible">
-      <div class="portrait">
-        <img
-          class="portrait__img"
-          src="assets/img/cat--unnoticed.jpg"
-          alt="Cat is sleeping"
-        /><img
-          class="portrait__img"
-          src="assets/img/cat--noticed.jpg"
-          alt="Cat noticed you"
-        /><img
-          class="portrait__img"
-          src="assets/img/cat--staring.jpg"
-          alt="Cat staring at you"
-        />
-      </div>
-    </aside>
-    <footer></footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
-    <script src="js/script.js"></script>
+        <h3 class="section-3-heading">projects</h3>
+        <div class="projects">
+          <div class="project">
+            <img src="images/projects/project-1.jpg" alt="project-images" />
+          </div>
+          <div class="project">
+            <img src="images/projects/project-2.jpg" alt="project-images" />
+          </div>
+          <div class="project">
+            <img src="images/projects/project-3.jpg" alt="project-images" />
+          </div>
+          <div class="project">
+            <img src="images/projects/project-4.jpg" alt="project-images" />
+          </div>
+          <div class="project">
+            <img src="images/projects/project-5.jpg" alt="project-images" />
+          </div>
+          <div class="project">
+            <img src="images/projects/project-6.jpg" alt="project-images" />
+          </div>
+          <div class="project">
+            <img src="images/projects/project-7.jpg" alt="project-images" />
+          </div>
+          <div class="project">
+            <img src="images/projects/project-8.jpg" alt="project-images" />
+          </div>
+          <div class="project">
+            <img src="images/projects/project-9.jpg" alt="project-images" />
+          </div>
+          <div class="project">
+            <img src="images/projects/project-10.jpg" alt="project-images" />
+          </div>
+          <div class="project">
+            <img src="images/projects/project-11.jpg" alt="project-images" />
+          </div>
+          <div class="project">
+            <img src="images/projects/project-12.jpg" alt="project-images" />
+          </div>
+          <!--div class="project">
+            <img src="images/projects/project-13.jpg" alt="project-images" />
+          </div>
+          <div class="project">
+            <img src="images/projects/project-14.jpg" alt="project-images" />
+          </div>
+          <div class="project">
+            <img src="images/projects/project-15.jpg" alt="project-images" />
+          </div>
+        </div-->
+        <div class="project-hide-btn">&laquo;Close</div>
+
+        <a id="show-more-btn" href="#" class="main-btn">
+          <div class="main-btn-content center-both">
+            <div class="main-btn-line"></div>
+            <div class="main-btn-line"></div>
+            <div class="main-btn-line"></div>
+            <div class="cta-show-more"><span id="show-more-text">More</span></div>
+          </div>
+        </a>
+      </section>
+      <section style="background:#000;color:#fff;font-size: 1.25rem;height: 4rem;z-index:10">
+      <h2>this site is under construction</h2>
+    </section>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
